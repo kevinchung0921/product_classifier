@@ -56,7 +56,7 @@ def writeDataSet(pattern):
 
 def convertCsvToDict():
 	# format:  class name, class group, class number
-	with io.open('./data/classes_34.csv','r') as f:
+	with io.open('./data/product_class - mapping.csv','r') as f:
 
 		clsdict = {}
 		for line in f.readlines():
@@ -98,7 +98,7 @@ writeDataSet('yahoo_classes\d+.csv')
 writeDataSet('costco_classes.csv')
 writeDataSet('rt_classes.csv')
 writeDataSet('carrefour_classes.csv')
-
-
+writeDataSet('my9_classes.csv')
+writeDataSet('kafinance_classes.csv')
 train.close()
 test.close()
